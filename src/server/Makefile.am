@@ -63,7 +63,8 @@ pbs_server_bin_LDADD = \
 	@PYTHON_LDFLAGS@ \
 	@PYTHON_LIBS@ \
 	-lssl \
-	-lcrypto
+	-lcrypto\
+	${DL_LIBS}
 
 pbs_server_bin_SOURCES = \
 	accounting.c \
