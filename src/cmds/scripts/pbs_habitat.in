@@ -797,6 +797,8 @@ if [ "${PBS_START_SERVER:-0}" != 0 ] ; then
 	# Source the file that sets PGSQL_LIBSTR
 	. "$PBS_EXEC"/libexec/pbs_pgsql_env.sh
 
+	PBS_licensing_loc_file=PBS_licensing_loc
+
 	# On some platforms LD_LIBRARY_PATH etc is not passed on after su
 	# so we set it again after the su. PGSQL_LIBSTR contains the line to
 	# set the variable again
